@@ -8,7 +8,7 @@ export async function GET(
   req:   Request
 ) {
 
-  return new Response('Hello, Next.js edge runtime!', {
+  return new Response('Hello, Next.js edge runtime API !', {
     status: 200,
     headers: { 'Set-Cookie': `token=afsdfsdflkj` },
   })
