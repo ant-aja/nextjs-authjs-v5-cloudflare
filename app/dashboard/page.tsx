@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 export const runtime = "edge";
 
 export default async function DashBoard() {
+  //get login session 
   const session = await auth();
 
   if (!session) redirect("/api/auth/signin");
