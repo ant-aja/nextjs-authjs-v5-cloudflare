@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type { NextRequest, NextResponse } from 'next';
  
 type ResponseData = {
   message: string
@@ -6,8 +6,8 @@ type ResponseData = {
  
 export const runtime = "edge";
 export async function GET(
-  req: NextApiRequest,
-  res: NextApiResponse<ResponseData>
+  req: NextRequest,
+  res: NextResponse<ResponseData>
 ) {
   // res.status(200).json({ message: 'Hello  from API route Next.js!' })
   return new Response('Hello, Next.js edge runtime!', {
