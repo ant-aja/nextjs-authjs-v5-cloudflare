@@ -11,4 +11,4 @@ export default function handler(
   res.status(200).json({ message: 'Hello  from API route Next.js!' })
 }
 
-  export const runtime = "edge";
+  // export const runtime = "edge";
