@@ -4,6 +4,8 @@ type ResponseData = {
   message: string
 }
  
+export const runtime = "edge";
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<ResponseData>
@@ -11,4 +13,3 @@ export default function handler(
   res.status(200).json({ message: 'Hello  from API route Next.js!' })
 }
 
-  // export const runtime = "edge";
