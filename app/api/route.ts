@@ -1,5 +1,13 @@
-//Route Handlers allow you to create custom request handlers for a given route using the Web Request and Response APIs.
+import { cookies } from 'next/headers';
+ 
+export const runtime = "edge";
 
-
-export const dynamic = 'force-dynamic' // defaults to auto
-export async function GET(request: Request) {}
+export async function GET(request: Request) {
+  const cookieStore = cookies()
+  const token = cookieStore.get('token')
+ 
+  return new Response('Hello, Next.js!', {
+    status: 200,
+    headers: { 'Set-Cookie': `token=${token?.value}` },
+  })
+}

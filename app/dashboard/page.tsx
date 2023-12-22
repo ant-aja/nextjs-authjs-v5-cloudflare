@@ -9,6 +9,7 @@ export default async function DashBoard() {
   const session = await auth();
 
   if (!session) redirect("/api/auth/signin");
+  
   return (
     <main className="flex min-h-screen flex-col items-center p-24">
       <h1>DASHBOARD PAGE</h1>
