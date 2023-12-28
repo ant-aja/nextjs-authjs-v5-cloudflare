@@ -13,7 +13,7 @@
     "@prisma/client": "^5.5.2",
     "kysely": "^0.26.3",
     "next": "^14.0.3",
-    "next-auth": "^5.0.0-beta.3",
+    "next-auth": "beta",
    
     "react": "^18",
     "react-dom": "^18"
