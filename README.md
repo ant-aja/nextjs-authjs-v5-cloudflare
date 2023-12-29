@@ -5,6 +5,5 @@ ADD Project Setings/Functions compatible flags : nodejs_compat
 Re deploy to get okay.
 
 TODO:
-- Merge Facit Next Lite
+- Add session management with iron-session
 - Add zustand and ecommerce shopping cart sample
-- 
